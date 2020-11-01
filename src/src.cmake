@@ -1,1 +1,1 @@
-message(STATUS, "test\nBBBBBB\nBBBBBB")
+message(STATUS "test\nBBBBBB\nBBBBBB")
