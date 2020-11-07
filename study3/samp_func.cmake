@@ -1,0 +1,23 @@
+function(samp_func1)
+    message("IN Samp Func")
+    message(STATUS ${ARGN})
+    list(LENGTH ARGN length)
+    message(STATUS "length:"${length})
+    
+    message(STATUS ${ARGC})
+    message(STATUS ${ARGV0})
+    message(STATUS ${ARGV1})
+endfunction()
+
+function(samp_func2 SAMP_ARG1 SAMP_ARG2)
+    message("IN Samp Func")
+    message(STATUS ${ARGN})
+    list(LENGTH ARGN length)
+    message(STATUS "length:"${length})
+
+    message(STATUS ${ARGC})
+    message(STATUS ${ARGV0})
+    message(STATUS ${ARGV1})
+    message(STATUS ${SAMP_ARG1})
+    message(STATUS ${SAMP_ARG2})
+endfunction()
